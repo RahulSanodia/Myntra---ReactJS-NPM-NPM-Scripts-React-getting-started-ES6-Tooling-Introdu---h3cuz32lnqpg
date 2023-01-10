@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+   "homepage": "http://RahulSanodia.github.io/Myntra---ReactJS-NPM-NPM-Scripts-React-getting-started-ES6-Tooling-Introdu---h3cuz32lnqpg",
   "scripts": {
     "test": "cypress run  --headless --reporter mochawesome",
     "start": "webpack-dev-server --mode development --watch --open --hot --port=3000",

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import '../styles/App.css';
+// import '../styles/App.css';
+import '../index.css';
 import logo from '../icon.jpeg'
 import cartSvg from '../shopping-cart-solid.svg'
 import prodcutData from '../../data'
@@ -158,10 +159,16 @@ const App = () => {
       <div id="cart-modal" style={showCart ? {} : { display: 'none' }} >
 
         {openCartModal()}</div>
-      <nav className="top-nav">
+      <nav className="top-nav ">
         <div className="nav-line">
-          <div className="icon-holder"><img src={logo} width={'50px'}></img></div>
-          <div className="cat-link-holder"><ol><li>MEN</li><li>WOMEN</li><li>KID</li></ol></div>
+          <div className="icon-holder  ">Design X</div>
+          <div className="cat-link-holder">
+            <ol>
+              <li>MEN</li>
+              <li>WOMEN</li>
+              <li>KID</li>
+            </ol>
+          </div>
         </div>
         <div className="nav-line">
           <div className="search-bar-holder"><input placeholder={'Search your product here'} value={serachStr} onChange={e => setSearchStr(e.target.value)} onKeyDown={(e) => {
@@ -185,9 +192,9 @@ const App = () => {
           <div className={'categories-holder'}>
             Categories:-
             <div className={'indiv-cat-holder'}>
-              <div className={'indiv-cat-checkbox'}><input type={'checkbox'} style={{ display: "inline" }} onClick={() => { updateShirtList({ ...filtertList, white: filtertList.white ? false : true }) }}></input>    
-               <div className={'indiv-cat-text'}>White</div></div>
-              <div className={'indiv-cat-checkbox'}><input type={'checkbox'} style={{ display: "inline" }} onClick={() => { updateShirtList({ ...filtertList, folded: filtertList.folded ? false : true }) }} ></input>   
+              <div className={'indiv-cat-checkbox'}><input type={'checkbox'} style={{ display: "inline" }} onClick={() => { updateShirtList({ ...filtertList, white: filtertList.white ? false : true }) }}></input>
+                <div className={'indiv-cat-text'}>White</div></div>
+              <div className={'indiv-cat-checkbox'}><input type={'checkbox'} style={{ display: "inline" }} onClick={() => { updateShirtList({ ...filtertList, folded: filtertList.folded ? false : true }) }} ></input>
                 <div className={'indiv-cat-text'}>Folded Sleeves</div></div>
             </div>
           </div>

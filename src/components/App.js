@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-// import '../styles/App.css';
-import '../index.css';
+import '../styles/App.css';
+// import '../index.css';
 import logo from '../icon.jpeg'
 import cartSvg from '../shopping-cart-solid.svg'
 import prodcutData from '../../data'
@@ -162,7 +162,7 @@ const App = () => {
       <nav className="top-nav ">
         <div className="nav-line">
           <div className="icon-holder  ">Design X</div>
-          <div className="cat-link-holder">
+          <div className="cat-link-holder ">
             <ol>
               <li>MEN</li>
               <li>WOMEN</li>

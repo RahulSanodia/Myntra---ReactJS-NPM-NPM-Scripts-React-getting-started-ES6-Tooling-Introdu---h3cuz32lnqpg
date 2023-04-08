@@ -159,6 +159,9 @@ const App = () => {
       <div id="cart-modal" style={showCart ? {} : { display: 'none' }} >
 
         {openCartModal()}</div>
+
+
+  {/* ******************************navbar**************************************** */}
       <nav className="top-nav ">
         <div className="nav-line">
           <div className="icon-holder  ">Design X</div>
@@ -171,7 +174,7 @@ const App = () => {
           </div>
         </div>
         <div className="nav-line">
-          <div className="search-bar-holder"><input placeholder={'Search your product here'} value={serachStr} onChange={e => setSearchStr(e.target.value)} onKeyDown={(e) => {
+          <div className="search-bar-holder"><input className="inpuut" placeholder={'Search'} value={serachStr} onChange={e => setSearchStr(e.target.value)} onKeyDown={(e) => {
 
             if (e.key === "Enter") {
               updateShirtList({ ...filtertList, searchStr: serachStr })
@@ -180,6 +183,7 @@ const App = () => {
           <div className="cart-holder" onClick={() => setShowCart(true)}><img src={cartSvg} width={'40px'}></img><div className={'cart-list-length'}>{shoppingCart.length}</div></div>
         </div>
       </nav>
+      {/* ******************************navbar end**************************************** */}
       <div id={'page-body'}>
         <div className={'filter-holder'}>
           <div className={'gender-list'}>
